@@ -29,6 +29,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		<!-- Provide scope: provides the dependency at runtime. For example, 
+		when building a web application for the Java Enterprise Edition, 
+		you would set the dependency on the Servlet API and related 
+		Java EE APIs to scope provided because the web container provides those classes. 
+		This scope is only available on the compilation and test classpath, and is not transitive. -->
+		<!-- utilizamos jasper para servir los jsp desde dentro un jar file ya que nuestro tomcat en este 
+		caso esta embeded-->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
