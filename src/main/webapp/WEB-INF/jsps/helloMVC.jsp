@@ -7,6 +7,8 @@
 <title>MVC Pattern</title>
 </head>
 <body>
-	Bienvenido a MVC!!
+	Bienvenido a MVC!! ${msg}
+	
+	
 </body>
 </html>
